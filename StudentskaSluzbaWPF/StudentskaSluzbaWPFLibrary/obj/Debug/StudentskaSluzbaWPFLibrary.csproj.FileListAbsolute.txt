@@ -1,0 +1,9 @@
+C:\Users\Pc\source\repos\StudentskaSluzbaWPF\StudentskaSluzbaWPFLibrary\bin\Debug\StudentskaSluzbaWPFLibrary.dll
+C:\Users\Pc\source\repos\StudentskaSluzbaWPF\StudentskaSluzbaWPFLibrary\bin\Debug\StudentskaSluzbaWPFLibrary.pdb
+C:\Users\Pc\source\repos\StudentskaSluzbaWPF\StudentskaSluzbaWPFLibrary\obj\Debug\StudentskaSluzbaWPFLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Pc\source\repos\StudentskaSluzbaWPF\StudentskaSluzbaWPFLibrary\obj\Debug\StudentskaSluzbaWPFLibrary.dll
+C:\Users\Pc\source\repos\StudentskaSluzbaWPF\StudentskaSluzbaWPFLibrary\obj\Debug\StudentskaSluzbaWPFLibrary.pdb
+C:\Users\Pc\source\repos\StudentskaSluzbaWPF\StudentskaSluzbaWPFLibrary\bin\Debug\Dapper.dll
+C:\Users\Pc\source\repos\StudentskaSluzbaWPF\StudentskaSluzbaWPFLibrary\bin\Debug\Dapper.xml
+C:\Users\Pc\source\repos\StudentskaSluzbaWPF\StudentskaSluzbaWPFLibrary\obj\Debug\StudentskaSluzbaWPFLibrary.csproj.CopyComplete
+C:\Users\Pc\source\repos\StudentskaSluzbaWPF\StudentskaSluzbaWPFLibrary\obj\Debug\StudentskaSluzbaWPFLibrary.csproj.AssemblyReference.cache

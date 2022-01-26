@@ -1,0 +1,78 @@
+﻿<Window x:Class="StudentskaSluzbaWPFUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentskaSluzbaWPFUI"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+    
+       Title="MainWindow" Height="450" Width="700" WindowStyle="None" ResizeMode="NoResize"
+        FontFamily="Century Gothic" Background="White">
+
+
+    <Grid>
+        <Grid VerticalAlignment="Top" Height="90" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+
+
+                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="1" Margin="0,0,10,0">
+                <Image HorizontalAlignment="Center" Height="90" Source="C:\Users\Pc\Desktop\Slike\pi-banner.png" Margin="22,0"/>
+
+            </StackPanel>
+
+
+        </Grid>
+        <Grid HorizontalAlignment="Left" Width="200" Background="#FF345E87">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="59"/>
+
+
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+
+
+
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Vertical" Grid.Row="2">
+
+                <Button Height="40"   Background="#FF7A98AA" Foreground="White" BorderThickness="0" BorderBrush="WhiteSmoke" Margin="0,0,0,5" Click="Button_Click">Studenti</Button>
+                <Button Height="40"   Background="#FF7A98AA" Foreground="White" BorderThickness="0" BorderBrush="WhiteSmoke" Margin="0,0,0,5" Click="Button_Click_1">Predmeti</Button>
+                <Button Height="40"   Background="#FF7A98AA" Foreground="White" BorderThickness="0" BorderBrush="WhiteSmoke" Margin="0,0,0,5">Nastava</Button>
+                <Button Height="40"   Background="#FF7A98AA" Foreground="White" BorderThickness="0" BorderBrush="WhiteSmoke" >Ispiti</Button>
+            </StackPanel>
+
+        </Grid>
+        <TabControl VerticalAlignment="center" HorizontalAlignment="Left" BorderThickness="0" BorderBrush="Transparent" x:Name="MainTab" Margin="220,95,0,0" Width="310">
+            <DataGrid CanUserAddRows="False" Name="DG" AutoGenerateColumns="False" Height="288" Width="305" HorizontalAlignment="Left" RowHeight="30"  VerticalAlignment="Center" ColumnWidth="150">
+                <DataGrid.Columns >
+                    <!--<DataGridTextColumn Width="auto" Header="Id" Binding="{Binding Path=StudentId}"/>-->
+                    <DataGridTextColumn Width="auto" Header="Ime i Prezime" Binding="{Binding Path=FullName}"/>
+                    <DataGridTextColumn Width="auto" Header="Username" Binding="{Binding Path=UserName}"/>
+                    <DataGridTemplateColumn Width="auto" Header="Polozeni Predmeti">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Click="Button_Click_2" >Prikazi</Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+
+                    </DataGridTemplateColumn>
+
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </TabControl>
+        <Button FontSize="15" Content="Dodaj Studenta" HorizontalAlignment="Left" Margin="550,199,0,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="2.82,-0.553" Height="36" Click="Button_Click_3"/>
+        <Button FontSize="15" Content="Osvijezi" HorizontalAlignment="Left" Margin="550,311,0,0" VerticalAlignment="Top" Width="128" Height="34" Click="Button_Click_4"/>
+        <TextBlock FontWeight="Bold" FontSize="16" HorizontalAlignment="Left" Margin="220,104,0,0" TextWrapping="Wrap" Text="Studenti" VerticalAlignment="Top"/>
+
+    </Grid>
+
+</Window>

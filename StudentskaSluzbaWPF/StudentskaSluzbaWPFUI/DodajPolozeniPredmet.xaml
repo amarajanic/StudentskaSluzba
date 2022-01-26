@@ -1,0 +1,34 @@
+﻿<Window x:Class="StudentskaSluzbaWPFUI.DodajPolozeniPredmet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentskaSluzbaWPFUI"
+        mc:Ignorable="d" FontFamily="Century Gothic" FontSize="16"
+        Title="DodajPolozeniPredmet" Height="400" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+
+            
+
+
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Margin="10" Text="Naziv Predmeta"></TextBlock>
+        <TextBox Name="t1" Grid.Row="1" Margin="10" Text=""></TextBox>
+        <TextBlock Grid.Row="2" Margin="10" Text="Ocjena"></TextBlock>
+        <TextBox Name="t2" Grid.Row="3" Margin="10" Text=""></TextBox>
+        <TextBlock Grid.Row="4" Margin="10" Text="Datum Polaganja"></TextBlock>
+        <TextBox Name="t3" Grid.Row="5" Margin="10" Text=""></TextBox>
+        <Button Content="Dodaj Predmet" Grid.Row="6" Margin="10" Click="Button_Click"></Button>
+        
+    </Grid>
+</Window>
